@@ -49,7 +49,7 @@ def post_var(device,value1):
 #Send IFTTT notification on phone
 def send_warning(grader):
         try:  
-            tempUrl="https://maker.ifttt.com/trigger/hightemp/with/key/nVcbrqoqp_i9nJ4foQJM37AhGAVn5pHNv7DLh_GMi4v"      
+            tempUrl="https://maker.ifttt.com/trigger/{triggerword}/with/key/{webhookskey}"      # remove "{}"
             if(grader>9):
                 print("high temp")
                 res = urequests.post(url=tempUrl, json={"value1": grader})         
