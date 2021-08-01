@@ -19,7 +19,7 @@ wlan.antenna(WLAN.INT_ANT)
 wlan.connect(ssid=keys.WIFI_NAME, auth=(WLAN.WPA2, keys.WIFI_PASS)) 
 while not wlan.isconnected ():
     machine.idle()
-print("Connected to Wifi\n")
+print("Connected to Wi-Fi\n")
 
 
 #Builds the json to send the request
